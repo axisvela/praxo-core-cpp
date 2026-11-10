@@ -5,18 +5,17 @@ embeddable, MIT-licensed agent execution kernel with policy controls,
 human-in-the-loop approval, checkpoints, events, and tool calling.
 
 - Package: `praxo-core-cpp` (`0.4.0`)
-- Registry: source / CMake
+- Registry: Source / CMake
+- Install: `CMake source build (see README)`
 - Documentation: https://axisvela.github.io/praxo-core/languages/cpp/
+- Mirror repository: https://github.com/axisvela/praxo-core-cpp
 - Canonical source: https://github.com/axisvela/praxo-core/tree/main/language/cpp
 - Release index: https://axisvela.github.io/praxo-core/languages/registry-status/
 
-This repository is a discovery mirror of the canonical C++ source. The
-monorepo remains the source of truth and the release workflow source. Shared
-conformance vectors are included under `spec/`.
-
-## Install or build
-
-Source build with CMake from `language/cpp`.
+This repository is a discovery mirror of the canonical C++ source.
+The monorepo remains the source of truth and the release workflow source. Shared
+conformance vectors are included under `spec/`, so the implementation can be
+built and tested here.
 
 ## Verify
 
