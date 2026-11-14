@@ -67,11 +67,13 @@ Runnable examples live under [`language/cpp/examples`](language/cpp/examples).
 | --- | --- |
 | [checkpoint](language/cpp/examples/checkpoint) | This example uses the C++ Core checkpoint allowlist to encode and decode only registered payload types. |
 | [event-sink](language/cpp/examples/event-sink) | This example uses the C++ Core sink composition to fan out lifecycle and tool events and filter the tool-only stream. |
+| [hitl](language/cpp/examples/hitl) | This example demonstrates a write tool that requires human approval: |
 | [identity-policy](language/cpp/examples/identity-policy) | This example binds a trusted principal to C++ Core policy decisions and rejects missing, inactive, role-mismatched, and tenant-mismatched actions. |
 | [mcp](language/cpp/examples/mcp) | This example uses a caller-owned in-process transport with the C++ MCP client. It covers initialize, `tools/list`, and `tools/call` without a server process. |
 | [provider-fallback](language/cpp/examples/provider-fallback) | This example calls a fallback only after the primary fails and preserves the primary error when both fail. |
 | [retry](language/cpp/examples/retry) | This example retries a transient failure with a bounded attempt count and rethrows the final error when attempts are exhausted. |
 | [service](language/cpp/examples/service) | This example defines a transport-neutral request handler boundary with health, principal, and run cases. Wire it into any C++ HTTP server. |
+| [session-checkpoint](language/cpp/examples/session-checkpoint) | This example saves and restores a conversation history across two agent turns using the Core checkpoint allowlist. |
 | [streaming](language/cpp/examples/streaming) | This example collects agent stream parts from the C++ Core and checks the `values` and `messages` lifecycle. |
 | [structured-output](language/cpp/examples/structured-output) | This example validates a final JSON answer against a schema and rejects invalid output. |
 
