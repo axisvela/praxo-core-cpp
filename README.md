@@ -8,6 +8,7 @@ human-in-the-loop approval, checkpoints, events, and tool calling.
 - Registry: Source / CMake
 - Install: `CMake source build (see README)`
 - Documentation: https://axisvela.github.io/praxo-core/languages/cpp/
+- Examples: https://github.com/axisvela/praxo-core-cpp/tree/main/language/cpp/examples
 - Mirror repository: https://github.com/axisvela/praxo-core-cpp
 - Canonical source: https://github.com/axisvela/praxo-core/tree/main/language/cpp
 - Release index: https://axisvela.github.io/praxo-core/languages/registry-status/
