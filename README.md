@@ -9,9 +9,9 @@ C++20 implementation of the PRAXO-CORE agent contract. The normative contract is
 | Package | `praxo-core-cpp` |
 | Registry | Source / CMake |
 | Build | CMake source build (see README) |
-| Source version | `0.7.0` |
+| Source version | `0.8.0` |
 | Published version | not published |
-| Source tag | `cpp/v0.7.0` |
+| Source tag | `cpp/v0.8.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/cpp/ |
@@ -66,9 +66,11 @@ Runnable examples live under [`language/cpp/examples`](language/cpp/examples).
 | Example | What it shows |
 | --- | --- |
 | [checkpoint](language/cpp/examples/checkpoint) | This example uses the C++ Core checkpoint allowlist to encode and decode only registered payload types. |
+| [consumer](language/cpp/examples/consumer) | This example runs a deterministic model against the C++ Core, registers one `record(target)` tool, applies an explicit tool scope plus policy, and checks that an allowed call pr... |
 | [event-sink](language/cpp/examples/event-sink) | This example uses the C++ Core sink composition to fan out lifecycle and tool events and filter the tool-only stream. |
 | [hitl](language/cpp/examples/hitl) | This example demonstrates a write tool that requires human approval: |
 | [identity-policy](language/cpp/examples/identity-policy) | This example binds a trusted principal to C++ Core policy decisions and rejects missing, inactive, role-mismatched, and tenant-mismatched actions. |
+| [live-model](language/cpp/examples/live-model) | This example connects the C++ Core to an OpenAI-compatible endpoint through the existing `OpenAICompatible` adapter and registers one low-risk `get_time(zone)` tool. The model m... |
 | [mcp](language/cpp/examples/mcp) | This example uses a caller-owned in-process transport with the C++ MCP client. It covers initialize, `tools/list`, and `tools/call` without a server process. |
 | [provider-fallback](language/cpp/examples/provider-fallback) | This example calls a fallback only after the primary fails and preserves the primary error when both fail. |
 | [retry](language/cpp/examples/retry) | This example retries a transient failure with a bounded attempt count and rethrows the final error when attempts are exhausted. |
