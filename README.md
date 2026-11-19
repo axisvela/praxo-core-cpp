@@ -9,9 +9,9 @@ C++20 implementation of the PRAXO-CORE agent contract. The normative contract is
 | Package | `praxo-core-cpp` |
 | Registry | Source / CMake |
 | Build | CMake source build (see README) |
-| Source version | `0.8.0` |
+| Source version | `0.9.0` |
 | Published version | not published |
-| Source tag | `cpp/v0.8.0` |
+| Source tag | `cpp/v0.9.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/cpp/ |
@@ -50,9 +50,9 @@ See the [full C++ README](language/cpp/README.md) for complete installation, bui
 
 | Capability | Status | Detail |
 | --- | --- | --- |
-| OpenAI-compatible model | native (transport seam) | `OpenAICompatible`; caller supplies HTTP transport |
-| Anthropic model | native (transport seam) | `Anthropic`; caller supplies HTTP and streaming transports; Anthropic SSE streaming |
-| Gemini model | native (transport seam) | `Gemini`; caller supplies HTTP and streaming transports; Gemini SSE streaming |
+| OpenAI-compatible model | native (transport seam) | `OpenAICompatible`; caller supplies HTTP and streaming transports; `OpenAICompatibleStreamTransport` reassembles SSE content, tool calls, usage, and finish reason |
+| Anthropic model | native (transport seam) | `Anthropic`; caller supplies HTTP and streaming transports; Anthropic SSE reassembly |
+| Gemini model | native (transport seam) | `Gemini`; caller supplies HTTP and streaming transports; Gemini SSE reassembly |
 | MCP client | native (transport seam) | `McpClient`; caller supplies `McpTransport` |
 | Harmovela sink | native (transport seam) | `HarmovelaSink`; caller supplies HTTP transport |
 | OpenTelemetry sink | native (transport seam) | `OtelSink`; caller supplies `OtelTransport` |
