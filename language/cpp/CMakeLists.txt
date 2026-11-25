@@ -107,6 +107,10 @@ add_executable(praxo-cpp-industrial-edge-tutorial
     Tutorial/industrial-edge/main.cpp)
 target_link_libraries(praxo-cpp-industrial-edge-tutorial PRIVATE praxo_cpp)
 
+add_library(praxo-cpp-ai-edge-application STATIC
+    application/main.cpp)
+target_link_libraries(praxo-cpp-ai-edge-application PRIVATE praxo_cpp)
+
 add_executable(praxo-cpp-traffic-signal-plan-tutorial
     Tutorial/traffic-signal-plan/main.cpp)
 target_link_libraries(praxo-cpp-traffic-signal-plan-tutorial PRIVATE praxo_cpp)
