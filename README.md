@@ -12,6 +12,9 @@ C++20 implementation of the PRAXO-CORE agent contract. The normative contract is
 | Source version | `0.9.0` |
 | Published version | not published |
 | Source tag | `cpp/v0.9.0` |
+| Tutorial tag | `cpp/tutorial/v0.1.0` |
+| Application tag | `cpp/application/v0.1.0` |
+| Examples tag | `cpp/examples/v0.1.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/cpp/ |
@@ -78,6 +81,40 @@ Runnable examples live under [`language/cpp/examples`](language/cpp/examples).
 | [session-checkpoint](language/cpp/examples/session-checkpoint) | This example saves and restores a conversation history across two agent turns using the Core checkpoint allowlist. |
 | [streaming](language/cpp/examples/streaming) | This example collects agent stream parts from the C++ Core and checks the `values` and `messages` lifecycle. |
 | [structured-output](language/cpp/examples/structured-output) | This example validates a final JSON answer against a schema and rejects invalid output. |
+
+## Scenario Tutorials
+
+Scenario-oriented tutorials live under `language/cpp/Tutorial`.
+
+| Path | What it shows |
+| --- | --- |
+| [Tutorial](language/cpp/Tutorial) | Bounded C++ examples built on the native Core. Each tutorial is a small, runnable slice with explicit non-goals and an application-owned boundary; none is a complete industry pr... |
+| [bom-review](language/cpp/Tutorial/bom-review) | A bounded tutorial slice over the native C++ Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [construction-safety](language/cpp/Tutorial/construction-safety) | A bounded tutorial slice over the native C++ Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [container-yard](language/cpp/Tutorial/container-yard) | A bounded first slice of TL-02, not a terminal operating system. It replans fixed synthetic container jobs under resource constraints and drafts a review-only schedule. No crane... |
+| [drone-fleet-plan](language/cpp/Tutorial/drone-fleet-plan) | A bounded tutorial slice over the native C++ Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [dubbing-plan](language/cpp/Tutorial/dubbing-plan) | A bounded tutorial slice over the native C++ Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [eda-placement](language/cpp/Tutorial/eda-placement) | A bounded first slice of OG-05, not a foundry-valid physical-design flow. It reads a fixed synthetic placement grid and drafts a review-only placement with stated PPA proxies. N... |
+| [fleet-map](language/cpp/Tutorial/fleet-map) | A bounded tutorial slice over the native C++ Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [household-robot](language/cpp/Tutorial/household-robot) | A bounded tutorial slice over the native C++ Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [industrial-edge](language/cpp/Tutorial/industrial-edge) | A scoped industrial tutorial over the native MIT C++ Core. It reads one fixed `edge-100` snapshot through an application-owned `DeviceAdapter` interface and drafts an operator m... |
+| [materials-design](language/cpp/Tutorial/materials-design) | A bounded first slice of SC-04, not a validated materials-discovery pipeline. It evaluates fixed synthetic candidate properties and drafts the next review-only simulation. No va... |
+| [mesh-review](language/cpp/Tutorial/mesh-review) | A bounded first slice of MD-05, not a CAD kernel or manufacturing-certification flow. It compares fixed synthetic mesh descriptors against stated constraints and drafts a review... |
+| [mining-slope](language/cpp/Tutorial/mining-slope) | A bounded tutorial slice over the native C++ Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [molecule-screen](language/cpp/Tutorial/molecule-screen) | A bounded first slice of SC-02, not drug discovery. It ranks fixed synthetic molecular descriptors under stated constraints and drafts a review-only assessment. No efficacy, tox... |
+| [ocean-routing](language/cpp/Tutorial/ocean-routing) | A bounded first slice of TL-03, not a navigation or fuel-optimization system. It compares fixed synthetic route/weather costs and drafts a review-only route. No navigation comma... |
+| [production-scheduling](language/cpp/Tutorial/production-scheduling) | A bounded tutorial slice over the native C++ Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [quant-risk](language/cpp/Tutorial/quant-risk) | A bounded tutorial slice over the native C++ Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [storyboard-previs](language/cpp/Tutorial/storyboard-previs) | A bounded tutorial slice over the native C++ Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [traffic-signal-plan](language/cpp/Tutorial/traffic-signal-plan) | A bounded first slice of CT-01, not a traffic-control system. It reads fixed junction queues, drafts a review-only green-time plan and checks it against deterministic limits. No... |
+
+## Reference Applications
+
+Complete AI-native reference applications live under `language/cpp/application`.
+
+| Path | What it shows |
+| --- | --- |
+| [application](language/cpp/application) | A C++ edge integration where the agent drives the primary device-diagnosis workflow: an operator submits an incident intent, the agent reads application-owned device telemetry t... |
 
 ## Verify
 
