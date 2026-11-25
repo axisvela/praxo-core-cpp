@@ -9,9 +9,9 @@ C++20 implementation of the PRAXO-CORE agent contract. The normative contract is
 | Package | `praxo-core-cpp` |
 | Registry | Source / CMake |
 | Build | CMake source build (see README) |
-| Source version | `0.9.0` |
+| Source version | `0.10.0` |
 | Published version | not published |
-| Source tag | `cpp/v0.9.0` |
+| Source tag | `cpp/v0.10.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/cpp/ |
