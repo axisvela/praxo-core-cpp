@@ -1,6 +1,6 @@
 # PRAXO-CORE for C++
 
-C++20 implementation of the PRAXO-CORE agent contract. The normative contract is [`spec/`](spec/README.md); Go remains the reference implementation.
+C++20 implementation of the PRAXO-CORE agent contract. The normative contract is [`spec/`](https://github.com/axisvela/praxo-core/blob/main/spec/README.md); Go remains the reference implementation.
 
 ## At a glance
 
@@ -11,7 +11,8 @@ C++20 implementation of the PRAXO-CORE agent contract. The normative contract is
 | Build | CMake source build (see README) |
 | Source version | `0.10.0` |
 | Published version | not published |
-| Source tag | `cpp/v0.10.0` |
+| Publication status | source-only |
+| Canonical source tag | [`cpp/v0.10.0`](https://github.com/axisvela/praxo-core/tree/cpp/v0.10.0) |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/cpp/ |
@@ -30,7 +31,7 @@ C++20 implementation of the PRAXO-CORE agent contract. The normative contract is
 
 ## Quick start
 
-This implementation is source-only. Follow the build instructions in [`language/cpp/README.md`](language/cpp/README.md).
+No published package is available. Follow the source build instructions in [`language/cpp/README.md`](language/cpp/README.md).
 
 ```cpp
 #include "praxo/agent.hpp"
@@ -107,7 +108,7 @@ Scenario-oriented tutorials live under `language/cpp/Tutorial`. Planning context
 
 ## Reference Applications
 
-Complete AI-native reference applications live under `language/cpp/application`.
+Reference application sources live under `language/cpp/application`. See each README for implementation scope and validation status.
 
 | Path | What it shows |
 | --- | --- |
@@ -154,7 +155,7 @@ This mirror contains the language source and the shared `spec/` vectors, so the 
 - Mirror repository: https://github.com/axisvela/praxo-core-cpp
 - Release index: https://axisvela.github.io/praxo-core/languages/registry-status/
 
-This repository is a discovery mirror of the canonical C++ source. The monorepo remains the source of truth and the release workflow source.
+This repository is a discovery mirror of the canonical C++ source. The monorepo remains the source of truth and the release workflow source. The mirror's `main` branch tracks current source, not a release snapshot. Source tags refer to the canonical monorepo and are not necessarily present in this mirror; syncing the branch does not publish mirror tags or registry packages.
 
 PRAXO-CORE is not a hosted model, workflow engine, identity provider, or safety controller. Do not infer exactly-once execution, complete sandbox isolation, production security certification, live-provider behavior, or physical safety from this package.
 
