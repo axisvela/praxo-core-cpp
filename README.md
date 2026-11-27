@@ -7,11 +7,11 @@ C++20 implementation of the PRAXO-CORE agent contract. The normative contract is
 | Field | Value |
 | --- | --- |
 | Package | `praxo-core-cpp` |
-| Registry | Source / CMake |
-| Build | CMake source build (see README) |
+| Registry | [xmake](https://packages.xmake.io/packages/praxo-core-cpp) |
+| Install | `xrepo install praxo-core-cpp` |
 | Source version | `0.10.0` |
-| Published version | not published |
-| Publication status | source-only |
+| Published version | `0.9.0` |
+| Publication status | published on xmake 0.9.0 (source 0.10.0); vcpkg and Conan submissions open |
 | Canonical source tag | [`cpp/v0.10.0`](https://github.com/axisvela/praxo-core/tree/cpp/v0.10.0) |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
@@ -31,7 +31,11 @@ C++20 implementation of the PRAXO-CORE agent contract. The normative contract is
 
 ## Quick start
 
-No published package is available. Follow the source build instructions in [`language/cpp/README.md`](language/cpp/README.md).
+Install the published package:
+
+```text
+xrepo install praxo-core-cpp
+```
 
 ```cpp
 #include "praxo/agent.hpp"
